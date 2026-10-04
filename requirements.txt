@@ -1,0 +1,6 @@
+python -m venv .venv
+source .venv/bin/activate        # Windows: .venv\Scripts\activate
+
+!pip install langchain langchain-core langchain-openai langchain-community \
+            langchain-text-splitters langchain-chroma langgraph \
+            pypdf beautifulsoup4 python-dotenv pydantic

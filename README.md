@@ -8,10 +8,9 @@ The repository is a learning/code-along project. Each file focuses on one concep
 langchain-code-along/
 ├── README.md                     # what this repo is, how to run it
 ├── requirements.txt
-├── .env.example                  # OPENAI_API_KEY=...
+├── .env.example                  # HuggingFace or OPENAI_API_KEY=...
 ├── data/
 │   ├── sample.pdf
-│   └── notes.txt
 ├── 01_chain_types/
 │   ├── 01_simple_chain.py
 │   ├── 02_sequential_chain.py
@@ -104,3 +103,14 @@ Information extraction, form-filling, anything feeding a database or API.
 #### Summarization chain (stuff, map-reduce, refine)
 
 Long texts exceed the context window, so there are three classic strategies:
+i. Stuff
+ii. Map-Reduce
+iii. Refine
+
+### Overall Langchain concepts covered in the repo are:
+- Code-along covering at least 5 chain types
+- Connect a document loader and text splitter in a pipeline
+- A retrieval chain built using LangChain and a vector store
+- LangChain memory used to maintain conversation context
+- Know when to use LangChain vs writing raw API calls
+
